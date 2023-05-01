@@ -1,0 +1,158 @@
+1)
+#include<stdio.h>
+int main()
+{
+	int m,n;
+	printf("enter the value of m:\n");
+	scanf("%d",&m);
+	printf("enter the value of n:");
+	scanf("%d",&n);
+	int temp=m;
+	m=n;
+	n=temp;
+	printf("\nm value after swapping:%d",m);
+	printf("\nn value after swapping:%d",n);
+}
+
+
+2)
+#include<stdio.h>
+int main()
+{
+	int a,b;
+	printf("enter the first number:\n");
+	scanf("%d",&a);
+	printf("enter the second number:");
+	scanf("%d",&b);
+	printf("\nsum=%d",a+b);
+	if(a>b)
+	{
+		printf("difference=%d",a-b);
+	}
+	else
+	{
+		printf("the numbers cannot be subracted");
+		
+	}
+	printf("product:%d",a*b);
+	printf("quotient:%d",a/b);
+}
+
+
+3)
+#include<stdio.h>
+int main()
+{
+	int cel,far;
+	printf("degree in celsius:");
+	scanf("%d",&cel);
+	far=(cel*1.8)+32;
+	printf("\n the degree in farheit is:%d",far);
+	
+}
+
+
+4)
+#include<stdio.h>
+int main()
+{
+	int a,b,s;
+	printf("length:");
+	scanf("%d",&a);
+	printf("\nbreadth:);
+	scanf("%d",&b);
+	s=a*b;
+	printf("\narea:%d",s);
+	
+}
+
+
+5)
+#include<stdio.h>
+int main()
+{
+	int num;
+	printf("enter a number:");
+	scanf("%d",&num);
+	if(num%2==0)
+	{
+		printf("\n it is even");
+	}
+	else
+	{
+		printf("it is odd");
+	}
+}
+
+
+6)
+#include<stdio.h>
+int main()
+{
+	int a;
+	printf("enter a year:");
+	scanf("%d",&a);
+	if(a%4==0 && a%400==0 \\ a%100!=0)
+	{
+		printf("\n leap yaer");
+		
+	}
+	else
+	{
+		printf(" not a leap year");
+	}
+}
+
+7)
+#include<stdioh>
+int main()
+{
+	float a,b,c;
+	printf("enter three integers:");
+	scanf("%f %f %f",&a,&b,&c);
+	printf("\nmaximum number=");
+	if(a>b && a>c)
+	{
+		printf("%f",a);
+	}
+	else if(b>c)
+	{
+		printf("%f",b);
+	}
+	else
+	{
+		printf("%f",c);
+	}
+	printf("\nminimum number=");
+	if(a<b && a<c)
+	{
+		print("%f",a);
+	}
+	else if(b>c)
+	{
+		print("%f",c);
+	}
+	else
+	{
+		printf("%f",c);
+	}
+}
+
+8)
+#include<stdio.h>
+int main()
+{
+	int n,i;
+	float num,avg,sum=0;
+	printf("enter hpe many values to get:");
+	scanf("%d",&n);
+	for (i=1;i<=n;i++)
+	{
+		printf("\nenter number %d:",i);
+		scanf("%f",&num);
+		sum+=num;
+	
+	}
+	avg=sum/n;
+	printf("\naverage=%1.2\n",avg);
+}
